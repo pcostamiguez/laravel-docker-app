@@ -2,7 +2,9 @@
 
 First, clone this project to garb docker essentials files to build
 
-`git clone git@github.com:pcostamiguez/laravel-docker-app.git`
+```
+git clone git@github.com:pcostamiguez/laravel-docker-app.git
+```
 
 Run command below to grab the latest version of laravel:
 
@@ -12,7 +14,9 @@ docker container run --rm -u ${UID}:${UID}  -v $(pwd):/app -w /app composer comp
 
 After that:
 
-`cd laravel-docker-app/`
+```
+cd laravel-docker-app/
+```
 
 Create the .env file:
 
@@ -32,7 +36,9 @@ PHP_CLI_SERVER_WORKERS=4
 
 Then, build the project:
 
-`docker compose up -d`
+```
+docker compose up -d
+```
 
 Your app will be running at http://localhost/
 
