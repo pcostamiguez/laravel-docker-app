@@ -15,7 +15,7 @@ cd laravel-docker-app/
 Run command below to grab the latest version of laravel:
 
 ```
-docker container run --rm -u ${UID}:${UID}  -v $(pwd):/app -w /app composer composer create-project --prefer-dist laravel/laravel .
+docker container run --rm -u ${UID}:${UID}  -v $(pwd):/app -w /app composer composer create-project --prefer-dist laravel/laravel src
 ```
 
 Create the .env file:
