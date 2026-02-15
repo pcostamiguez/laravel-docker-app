@@ -29,15 +29,11 @@ PHP_CLI_SERVER_WORKERS=4
 
 Clone this project to garb docker essentials files to build
 
-`git clone github.com/pcostamiguez/laraveldocker.git . `
+`git clone git@github.com:pcostamiguez/laravel-docker-app.git . `
 
 Then, build the project:
 
 `docker compose up -d`
-
-Generate a key for laravel:
-
-`docker compose exec php php artisan key:generate`
 
 Your app will be running at http://localhost/
 
