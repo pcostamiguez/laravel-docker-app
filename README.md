@@ -1,6 +1,10 @@
 # Laravel Docker
 
-First, run command below to grab the latest version of laravel:
+First, clone this project to garb docker essentials files to build
+
+`git clone git@github.com:pcostamiguez/laravel-docker-app.git . `
+
+Run command below to grab the latest version of laravel:
 
 ```
 docker container run --rm -u ${UID}:${UID}  -v $(pwd):/app -w /app composer composer create-project --prefer-dist laravel/laravel laravel-docker-app
@@ -25,11 +29,6 @@ QUEUE_CONNECTION=redis
 REDIS_HOST=redis
 PHP_CLI_SERVER_WORKERS=4
 ```
-
-
-Clone this project to garb docker essentials files to build
-
-`git clone git@github.com:pcostamiguez/laravel-docker-app.git . `
 
 Then, build the project:
 
