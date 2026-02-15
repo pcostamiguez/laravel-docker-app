@@ -27,6 +27,8 @@ Run command below to grab the latest version of laravel:
 docker container run --rm -u ${UID}:${UID}  -v $(pwd):/app -w /app composer composer create-project --prefer-dist laravel/laravel src
 ```
 
+Or clone your laravel app in ***src folder***.
+
 Enter in src folder:
 
 ```
@@ -56,7 +58,7 @@ cd ..
 ```
 
 ```
-docker compose up -d
+docker compose up -d --build
 ```
 
 Your app will be running at http://localhost/
