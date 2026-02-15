@@ -51,6 +51,12 @@ REDIS_HOST=redis
 PHP_CLI_SERVER_WORKERS=4
 ```
 
+Before build the compose, adjust the file src/package.json and **add in script section**:
+
+```
+"watch": "vite build --watch"
+```
+
 Then, build the project:
 
 ```
