@@ -12,13 +12,28 @@ After that:
 cd laravel-docker-app/
 ```
 
+Create a .env with content below:
+
+```
+DB_DATABASE=laravel
+DB_USERNAME=laravel
+DB_PASSWORD=laravel
+REDIS_PASSWORD=laravel
+```
+
 Run command below to grab the latest version of laravel:
 
 ```
 docker container run --rm -u ${UID}:${UID}  -v $(pwd):/app -w /app composer composer create-project --prefer-dist laravel/laravel src
 ```
 
-Create the .env file:
+Enter in src folder:
+
+```
+cd src/
+```
+
+Adjust the .env file (remember to insert same values from .env above):
 
 ```
 DB_CONNECTION=mysql
@@ -35,6 +50,10 @@ PHP_CLI_SERVER_WORKERS=4
 ```
 
 Then, build the project:
+
+```
+cd ..
+```
 
 ```
 docker compose up -d
