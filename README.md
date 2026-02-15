@@ -2,12 +2,12 @@
 
 First, clone this project to garb docker essentials files to build
 
-`git clone git@github.com:pcostamiguez/laravel-docker-app.git . `
+`git clone git@github.com:pcostamiguez/laravel-docker-app.git`
 
 Run command below to grab the latest version of laravel:
 
 ```
-docker container run --rm -u ${UID}:${UID}  -v $(pwd):/app -w /app composer composer create-project --prefer-dist laravel/laravel laravel-docker-app
+docker container run --rm -u ${UID}:${UID}  -v $(pwd):/app -w /app composer composer create-project --prefer-dist laravel/laravel .
 ```
 
 After that:
