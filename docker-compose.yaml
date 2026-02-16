@@ -20,7 +20,7 @@ services:
     working_dir: /assets
     volumes:
       - ./src:/assets
-    command: sh -c "npm install && npm run build"
+    command: sh -c "npm install && npm run watch"
 
   db:
     image: mariadb:12.2.2
