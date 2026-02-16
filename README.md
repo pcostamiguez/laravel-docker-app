@@ -69,3 +69,9 @@ docker compose up -d --build
 
 Your app will be running at http://localhost/
 
+For help, type:
+
+```
+make help
+```
+
